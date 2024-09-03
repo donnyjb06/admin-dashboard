@@ -125,8 +125,162 @@ body {
 
 /* TOP-BAR STYLING */
 #top-bar {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(6, calc(100% / 6));
+    grid-template-areas: repeat(2, 1fr);
+    grid-template-areas: "s s s s n n"
+                         ". . . . . . "
+                         "g g g g b b";
+
+    padding: 20px 40px 20px 40px;
+
     grid-area: topbar;
     background-color: var(--bg-color-2);
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* SEARCH BAR CONTAINER STYLING */
+#search-container {
+    grid-area: s;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+
+    height: auto;
+}
+
+/* #search-bar-container {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+
+    align-items: center;
+    gap: 15px;
+} */
+
+#search-input {
+    border: none;
+    background-color: var(--accent-color);
+    
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    height: 20px;
+    width: 100%;
+
+    padding: 15px 20px 15px 20px;
+    border-radius: 20px;
+}
+
+#search-input:focus {
+    outline: none;
+}
+
+/* GREETING STYLING */
+#greeting {
+    grid-area: g;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    gap: -50px;
+}
+
+#greeting > .profile-picture {
+    position: relative;
+    left: -30px;
+    width: 150px;
+    clip-path: circle(35% at center);
+}
+
+#greeting-container {
+    position: relative;
+    left: -30px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#hello {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* NOTIFICATION STYLING */
+#notification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    letter-spacing: 2px;
+
+    grid-area: n;
+}
+
+#notification-container > .profile-picture {
+    position: relative;
+    left: -20px;
+    height: 100px;
+    clip-path: circle(20% at 50% 50%);
+
+    cursor: pointer;
+}
+
+#notifications {
+    width: 20px;
+    cursor: pointer;
+}
+
+#name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+    position: relative;
+    left: -40px;
+
+    cursor: pointer;
+}
+
+/* TOP BAR BUTTONS STYLING */
+#top-bar-btns {
+    position: relative;
+    left: -40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    grid-area: b;
+}
+
+.top-bar-btn {
+    color: white;
+    background-color: var(--primary-color);
+
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px; 
+
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
 
 /* MAIN CONTENT STYLING */
