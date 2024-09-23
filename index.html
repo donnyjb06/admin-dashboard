@@ -1,165 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>TOP: Admin Dashboard</title>
 
     <!-- ROBOTO FONT LINK -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
-    rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <nav id="side-bar">
-            <div id="brand-name-logo">
-                <img src="assets/icons/side-bar-img/addash.png" alt="Admin Dashboard logo" class="side-bar-icon">
-                <h2 id="addash">AdDash</h2>
+      <nav id="side-bar">
+        <div id="brand-name-logo">
+          <img
+            src="assets/icons/side-bar-img/addash.png"
+            alt="Admin Dashboard logo"
+            class="side-bar-icon"
+          />
+          <h2 id="addash">AdDash</h2>
+        </div>
+
+        <div class="side-bar-buttons">
+          <div class="btn-group">
+            <img
+              src="assets/icons/side-bar-img/home.png"
+              alt="Side bar home button"
+              class="side-bar-icon"
+            />
+
+            <button class="side-bar-btn">Home</button>
+          </div>
+
+          <div class="btn-group">
+            <img
+              src="assets/icons/side-bar-img/profile.png"
+              alt="Side bar profile button"
+              class="side-bar-icon"
+            />
+
+            <button class="side-bar-btn">Profile</button>
+          </div>
+
+          <div class="btn-group">
+            <img
+              src="assets/icons/side-bar-img/messages.png"
+              alt="Side bar messages button"
+              class="side-bar-icon"
+            />
+
+            <button class="side-bar-btn">Messages</button>
+          </div>
+
+          <div class="btn-group">
+            <img
+              src="assets/icons/side-bar-img/history.png"
+              alt="Side bar history button"
+              class="side-bar-icon"
+            />
+
+            <button class="side-bar-btn">History</button>
+          </div>
+
+          <div class="btn-group">
+            <img
+              src="assets/icons/side-bar-img/tasks.png"
+              alt="Side bar tasks button"
+              class="side-bar-icon"
+            />
+
+            <button class="side-bar-btn">Tasks</button>
+          </div>
+
+          <div class="btn-group">
+            <img
+              src="assets/icons/side-bar-img/communities.png"
+              alt="Side bar communitites button"
+              class="side-bar-icon"
+            />
+
+            <button class="side-bar-btn">Communities</button>
+          </div>
+        </div>
+
+        <div class="side-bar-buttons">
+          <div class="btn-group">
+            <img
+              src="assets/icons/side-bar-img/settings.png"
+              alt="Side bar settings button"
+              class="side-bar-icon"
+            />
+
+            <button class="side-bar-btn">Settings</button>
+          </div>
+
+          <div class="btn-group">
+            <img
+              src="assets/icons/side-bar-img/support.png"
+              alt="Side bar support button"
+              class="side-bar-icon"
+            />
+
+            <button class="side-bar-btn">Support</button>
+          </div>
+
+          <div class="btn-group">
+            <img
+              src="assets/icons/side-bar-img/privacy.png"
+              alt="Side bar privacy button"
+              class="side-bar-icon"
+            />
+
+            <button class="side-bar-btn">Privacy</button>
+          </div>
+        </div>
+      </nav>
+
+      <nav id="top-bar">
+        <div id="search-container">
+          <img
+            src="assets/icons/top-bar-img/search.png"
+            alt="Top bar search button"
+            class="top-bar-icon"
+            id="search-button"
+          />
+          <input type="search" id="search-input" />
+        </div>
+
+        <div id="notification-container">
+          <img
+            src="assets/icons/top-bar-img/notifcations.png"
+            alt="Top bar notifications button"
+            class="top-bar-icon"
+            id="notifications"
+          />
+
+          <img
+            src="assets/icons/top-bar-img/pfp.JPG"
+            alt="Top bar profile picture small"
+            class="profile-picture"
+          />
+
+          <p id="name">Donovan Jabbar</p>
+        </div>
+
+        <div id="greeting">
+          <img
+            src="assets/icons/top-bar-img/pfp.JPG"
+            alt="Top bar profile picture large"
+            class="profile-picture"
+          />
+
+          <div id="greeting-container">
+            <span id="hello"> Hi there, </span>
+
+            <span id="username"> Donovan Jabbar (@donnyjb06) </span>
+          </div>
+        </div>
+
+        <div id="top-bar-btns">
+          <button class="top-bar-btn">New</button>
+
+          <button class="top-bar-btn">Upload</button>
+
+          <button class="top-bar-btn">Share</button>
+        </div>
+      </nav>
+
+      <main id="content">
+        <div id="your-projects">
+          <span class="content-header">Your Projects</span>
+          <div class="project-container">
+            <div class="project-card">
+              <p class="project-title">Rainbow6 Landing Page</p>
+
+              <p class="project-details">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                rerum nemo id accusamus minima esse aspernatur, fuga, animi,
+                unde nihil inventore a. Cumque laborum a iusto porro tempore
+                dolore alias? Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Velit quaerat voluptatum recusandae
+                repudiandae nostrum nesciunt alias, enim iure hic ducimus
+                voluptate rem fuga excepturi sunt ad harum saepe blanditiis
+                corporis.
+              </p>
+
+              <div class="card-icons">
+                <img src="assets/icons/card-img/favorite-star.png" alt=Project
+                card favorite button" class="favorite">
+                <img
+                  src="assets/icons/card-img/live-preview-eye.png"
+                  alt="Project card live preview button"
+                  class="live-preview"
+                />
+                <img
+                  src="assets/icons/card-img/git-repo.png"
+                  alt="Project card github button"
+                  class="github"
+                />
+              </div>
             </div>
 
-            <div class="side-bar-buttons">
-                <div class="btn-group">
-                    <img src="assets/icons/side-bar-img/home.png" alt="Side bar home button" class="side-bar-icon">
+            <div class="project-card">
+              <p class="project-title">Quote Generator</p>
 
-                    <button class="side-bar-btn">
-                        Home
-                    </button>
-                </div>
+              <p class="project-details">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+                ab, sit ex sapiente possimus maxime quia accusamus earum nulla
+                deleniti error repellat natus est tenetur doloribus? Quae qui
+                earum ducimus. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptatibus animi, suscipit ab iste incidunt
+                necessitatibus at veritatis quis harum accusamus deleniti?
+                Ipsam, saepe. Exercitationem quam illum eaque itaque quisquam
+                dolore.
+              </p>
 
-                <div class="btn-group">
-                    <img src="assets/icons/side-bar-img/profile.png" alt="Side bar profile button" class="side-bar-icon">
-                        
-
-                    <button class="side-bar-btn">
-                        Profile
-                    </button>
-                </div>
-
-                <div class="btn-group">
-                    <img src="assets/icons/side-bar-img/messages.png" alt="Side bar messages button" class="side-bar-icon">
-
-                    <button class="side-bar-btn">
-                        Messages
-                    </button>
-                </div>
-                
-                <div class="btn-group">
-                    <img src="assets/icons/side-bar-img/history.png" alt="Side bar history button" class="side-bar-icon">
-
-                    <button class="side-bar-btn">
-                        History
-                    </button>
-                </div>
-
-                <div class="btn-group">
-                    <img src="assets/icons/side-bar-img/tasks.png" alt="Side bar tasks button" class="side-bar-icon">
-                        
-
-                    <button class="side-bar-btn">
-                        Tasks
-                    </button>
-                </div>
-
-                <div class="btn-group">
-                    <img src="assets/icons/side-bar-img/communities.png" alt="Side bar communitites button" class="side-bar-icon">
-                        
-                    
-                    <button class="side-bar-btn">
-                        Communities
-                    </button>
-                </div>
+              <div class="card-icons">
+                <img src="assets/icons/card-img/favorite-star.png" alt=Project
+                card favorite button" class="favorite">
+                <img
+                  src="assets/icons/card-img/live-preview-eye.png"
+                  alt="Project card live preview button"
+                  class="live-preview"
+                />
+                <img
+                  src="assets/icons/card-img/git-repo.png"
+                  alt="Project card github button"
+                  class="github"
+                />
+              </div>
             </div>
 
-            <div class="side-bar-buttons">
-                <div class="btn-group">
-                    <img src="assets/icons/side-bar-img/settings.png" alt="Side bar settings button" class="side-bar-icon">
-                        
-                    <button class="side-bar-btn">
-                        Settings
-                    </button>
-                </div>
+            <div class="project-card">
+              <p class="project-title">Filler Title</p>
 
-                <div class="btn-group">
-                    <img src="assets/icons/side-bar-img/support.png" alt="Side bar support button" class="side-bar-icon">
-                        
-                    <button class="side-bar-btn">
-                        Support
-                    </button>
-                </div>
+              <p class="project-details">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+                perferendis quam accusamus necessitatibus non dicta dolore vero
+                expedita, nobis sit deserunt, nesciunt velit sequi error. Iusto
+                atque nihil earum omnis.
+              </p>
 
-                <div class="btn-group">
-                    <img src="assets/icons/side-bar-img/privacy.png" alt="Side bar privacy button" class="side-bar-icon">
-
-                    <button class="side-bar-btn">
-                        Privacy
-                    </button>
-                </div>
-            </div>
-        </nav>
-
-        <nav id="top-bar">
-            <div id="search-container">
-                <img src="assets/icons/top-bar-img/search.png"
-                alt="Top bar search button"
-                class="top-bar-icon"
-                id="search-button">
-                <input type="search"
-                id="search-input">
-            </div>
-            
-            <div id="notification-container">
-                <img src="assets/icons/top-bar-img/notifcations.png" 
-                alt="Top bar notifications button" 
-                class="top-bar-icon" 
-                id="notifications">
-
-                <img src="assets/icons/top-bar-img/pfp.JPG" 
-                alt="Top bar profile picture small"  
-                class="profile-picture">
-
-                <p id="name">Donovan Jabbar</p>
+              <div class="card-icons">
+                <img src="assets/icons/card-img/favorite-star.png" alt=Project
+                card favorite button" class="favorite">
+                <img
+                  src="assets/icons/card-img/live-preview-eye.png"
+                  alt="Project card live preview button"
+                  class="live-preview"
+                />
+                <img
+                  src="assets/icons/card-img/git-repo.png"
+                  alt="Project card github button"
+                  class="github"
+                />
+              </div>
             </div>
 
-            <div id="greeting">
-                <img src="assets/icons/top-bar-img/pfp.JPG" 
-                alt="Top bar profile picture large" 
-                class="profile-picture">
+            <div class="project-card">
+              <p class="project-title">Rock Paper Scissors</p>
 
-                <div id="greeting-container">
-                    <span id="hello">
-                        Hi there,
-                    </span>
-                    
-                    <span id="username">
-                        Donovan Jabbar (@donnyjb06)
-                    </span>
-                </div>
+              <p class="project-details">
+                This game features cool animations and a retro pixel design UI
+                completely made by me, bringing a nostalgic feel to a classic
+                game. Play against the CPU and see if you can reach 5 points
+                first to win the game!
+              </p>
+
+              <div class="card-icons">
+                <img src="assets/icons/card-img/favorite-star.png" alt=Project
+                card favorite button" class="favorite">
+                <img
+                  src="assets/icons/card-img/live-preview-eye.png"
+                  alt="Project card live preview button"
+                  class="live-preview"
+                />
+                <img
+                  src="assets/icons/card-img/git-repo.png"
+                  alt="Project card github button"
+                  class="github"
+                />
+              </div>
             </div>
 
-            <div id="top-bar-btns">
-                <button class="top-bar-btn">
-                    New
-                </button>
-                
-                <button class="top-bar-btn">
-                    Upload
-                </button>
-                
-                <button class="top-bar-btn">
-                    Share
-                </button>
+            <div class="project-card">
+              <p class="project-title">Donny's Recipes</p>
+
+              <p class="project-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                laboriosam asperiores tempora perferendis ducimus sequi
+                inventore quia odio sed. Ducimus laudantium a ab quia deserunt
+                vero consequatur officiis, nam mollitia?
+              </p>
+
+              <div class="card-icons">
+                <img src="assets/icons/card-img/favorite-star.png" alt=Project
+                card favorite button" class="favorite">
+                <img
+                  src="assets/icons/card-img/live-preview-eye.png"
+                  alt="Project card live preview button"
+                  class="live-preview"
+                />
+                <img
+                  src="assets/icons/card-img/git-repo.png"
+                  alt="Project card github button"
+                  class="github"
+                />
+              </div>
             </div>
 
-                
-        </nav>
+            <div class="project-card">
+              <p class="project-title">Filler Title #2</p>
 
-        <main id="content"></main>
+              <p class="project-details">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+                esse recusandae vero? Quae non, id maiores expedita vitae optio
+                numquam nihil commodi explicabo nemo cumque aut illo officia
+                voluptatibus voluptatum?
+              </p>
+
+              <div class="card-icons">
+                <img src="assets/icons/card-img/favorite-star.png" alt=Project
+                card favorite button" class="favorite">
+                <img
+                  src="assets/icons/card-img/live-preview-eye.png"
+                  alt="Project card live preview button"
+                  class="live-preview"
+                />
+                <img
+                  src="assets/icons/card-img/git-repo.png"
+                  alt="Project card github button"
+                  class="github"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="announcements">
+          <span id="announcements-header"> Announcements </span>
+
+          <div id="announcements-container">
+            <div class="announcement" id="announcement1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloremque odit corrupti dolores facere dignissimos ducimus id.
+              Repellendus ab minus, vel obcaecati ad nulla distinctio saepe
+              repellat ex porro, quidem ea? Accusantium, sapiente quisquam
+              numquam perferendis nobis rem id eaque, laborum labore
+              voluptatibus incidunt omnis aspernatur impedit nostrum fuga?
+              Veritatis adipisci quasi quibusdam nihil, nostrum asperiores!
+              Pariatur ea iste expedita enim.
+            </div>
+
+            <hr />
+
+            <div class="announcement" id="announcement2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloremque odit corrupti dolores facere dignissimos ducimus id.
+              Repellendus ab minus, vel obcaecati ad nulla distinctio saepe
+              repellat ex porro, quidem ea? Accusantium, sapiente quisquam
+              numquam perferendis nobis rem id eaque, laborum labore
+              voluptatibus incidunt omnis aspernatur impedit nostrum fuga?
+              Veritatis adipisci quasi quibusdam nihil, nostrum asperiores!
+              Pariatur ea iste expedita enim.
+            </div>
+
+            <hr />
+
+            <div class="announcement" id="announcement3">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloremque odit corrupti dolores facere dignissimos ducimus id.
+              Repellendus ab minus, vel obcaecati ad nulla distinctio saepe
+              repellat ex porro, quidem ea? Accusantium, sapiente quisquam
+              numquam perferendis nobis rem id eaque, laborum labore
+              voluptatibus incidunt omnis aspernatur impedit nostrum fuga?
+              Veritatis adipisci quasi quibusdam nihil, nostrum asperiores!
+              Pariatur ea iste expedita enim.
+            </div>
+          </div>
+        </div>
+
+        <div id="trending">
+          <div class="content-header">Trending</div>
+          <div id="trend-container">
+            <div class="trend" id="trend1">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus voluptatum voluptatem delectus omnis! Omnis iste
+              eligendi quo accusamus molestiae corporis assumenda dicta possimus
+              modi, illum rerum, earum magnam? Temporibus, quae. Odio error a
+              esse nostrum deleniti minus dolores asperiores saepe, neque
+              aperiam praesentium, quisquam ducimus quos nobis eveniet aliquid,
+              temporibus eius quia laborum tenetur omnis rem perferendis
+              architecto. Architecto, soluta!
+            </div>
+            <div class="trend" id="trend2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+              neque repellendus id. Numquam, ipsam temporibus beatae delectus
+              neque veritatis natus, reiciendis accusamus provident ad animi
+              nemo atque quia! Unde, dolorem? Tempore consequatur dolore rem
+              placeat amet. Odio quo aliquam aspernatur recusandae culpa, facere
+              quos minima, incidunt odit assumenda vero necessitatibus nobis
+              distinctio dolore, asperiores commodi laboriosam impedit dolores
+              beatae. Quam!
+            </div>
+            <div class="trend" id="trend3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              maiores ipsam amet accusamus similique iusto corporis, qui
+              laboriosam hic, explicabo quod libero? Voluptas voluptatibus
+              dignissimos modi autem rerum, ut eaque? Esse, consectetur! Sed
+              officiis repellat quasi facilis maiores ducimus ut accusantium a
+              obcaecati, molestiae cum vel minima unde iure reiciendis
+              quibusdam. Ipsam, ut. Molestias excepturi quaerat beatae ipsam ab
+              at.
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-    
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
